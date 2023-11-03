@@ -14,17 +14,16 @@
 %   https://www.ctan.org/tex-archive/fonts/fontawesome?lang=en
 %\usepackage{fontawesome}
 \usepackage{metalogo}
+\usepackage{csquotes}
 \usepackage{dtklogos}
 \usepackage[utf8]{inputenc}
 \usepackage{tikz}
 \usetikzlibrary{mindmap,shadows}
 \hypersetup{
-    pdftitle={},
-    pdfauthor={},
-    pdfsubject={},
-    pdfkeywords={},
-    colorlinks=false,           % no lik border color
-    allbordercolors=white       % white border color for all
+    linkcolor=blue,
+    filecolor=magenta,      
+    urlcolor=cyan,
+    pdftitle={CV of Aaron Schneider},
 }
 
 \smartdiagramset{
@@ -54,7 +53,7 @@
 \definecolor{pgray}{HTML}{6E6E6E}
 
 \begin{document}
-\header{\hspace{1.2cm}Aaron David}{ Schneider}{astrophysicist}
+\header{\hspace{1.2cm}Aaron David}{ Schneider}{Astrophysiker}
 
 
 % Fake text to add separator
@@ -65,128 +64,208 @@
 % In the aside, each new line forces a line break
 \begin{aside}
   \includegraphics[scale=0.04]{img/Aaron_Circle}
-\section{Contact}
-~
-\textbf{address}
-   Rosenweg 10-12
-   69221 Dossenheim
-   ~
- \textbf{mobile}
- +49 178 3161990
- ~
- \textbf{mail}
-   \href{mailto:schneider@mpia.de}{schneider@mpia.de}
-\section{About Me}
+\section{Über mich}
 ~  
-\textbf{nationality}
-  german
+\textbf{Nationalität}
+  Deutsch
    ~
-  \textbf{birthplace}
-  Siegen, Germany
+  \textbf{Geburtsort}
+  Siegen
   ~
-  \textbf{civil status}
-  married
-  \section{Programming}
+  \textbf{Geburtstag}
+  19.03.1996
+  ~  
+  \textbf{Familienstand}
+  Verheiratet, 1 Kind
+  \section{Programmieren}
   ~
     \smartdiagram[bubble diagram]{
         \textbf{Python},
-        \textbf{C/C++\vspace{0.5cm}},
-        \textbf{CUDA\vspace{0.5cm}},
-        \textbf{LaTeX\vspace{0.5cm}},
-        \textbf{Bash\vspace{0.5cm}},
-        \textbf{Other}
+        \textbf{C/C++\vspace{0.2cm}},
+        \textbf{CUDA\vspace{0.2cm}},
+        \textbf{Fortran\vspace{1.0cm}},
+        \textbf{Bash\vspace{0.2cm}},
+        \textbf{Andere}
     }
     \textbf{github:} 
     \href{https://github.com/AaronDavidSchneider/}{@AaronDavidSchneider}
-     \section{Languages}
+     \section{Sprachkentnisse}
 	  ~
-    \textbf{german}
-    first language
+    \textbf{Deutsch}
+    Muttersprache
     ~
-    \textbf{english}
-    fluent
- \section{Interests}
-~
- hiking
- singing
-  road racing
-   programming
+    \textbf{Englisch}
+    Fließend
+ \section{Interessen}
+ ~
+ Wandern
+ Singen
+ %road cycling
+ Programmieren
 \end{aside}
 
-\section{Education}
+\section{Studium}
 \begin{entrylist}
   \entry
     {10/15-08/18}
-    {Bachelor in Physics}
+    {Bachelor in Physik}
     {Universität Heidelberg}
     {\begin{itemize}\vspace{-3mm}
-    	\item grade: 2.0 (UK: B)
-    	\item specialization: astrophysics and computational physics
-    	\item bachelor thesis: Surface waves in protoplanetary disks induced by outbursts
-    	\item supervisor of thesis: Prof.Dr. Cornelis P. Dullemond
+    	\item Note: 2.0
+    	\item Spezialisierungen: Astrophysik und Computergestützte Physik
+    	\item Bachelorarbeit: \enquote{Surface waves in protoplanetary disks induced by outbursts}
+    	\item Betreuer*in: Prof. Dr. Cornelis P. Dullemond
     \end{itemize}
 	}
-	\\
   \entry
     {10/18-10/20}
-    {Master in Physics}
-    {Universität Heidelberg}
+    {Master in Physik}
+    {Universität Heidelberg und Max Planck Institut für Astronomie}
     {\begin{itemize}\vspace{-3mm}
-    	\item expected grade: $~$1.5 (UK: A)
-    	\item specialization: Machine Learning and GPU Computing
-    	\item core courses: astronomical techniques, general relativity, theoretical astrophysics, cosmology, environomental physics
-    	\item master thesis: chemical composition of gas giants probed by accretion
-    	\item supervisor of thesis: Dr. Bertram Bitsch
+    	\item Note: 1.5
+    	\item Spezialisierungen: Machine Learning und GPU Computing
+    	\item Hauptkurse: Astronomical Techniques, General Relativity, Theoretical Astrophysics, Cosmology, Environomental Physics
+    	\item Masterarbeit: \enquote{Chemical composition of gas giants probed by accretion}
+    	\item Betreuer*in: Dr. Bertram Bitsch
     \end{itemize}
+    }
+  \entry    
+    {11/20-12/23}
+    {Doctor of Science: Astronomy}
+    {K{\o}benhavns Universitet und KULeuven}
+    {\begin{itemize}\vspace{-3mm}
+    \item Titel: \enquote{Connecting the atmosphere with the interior in hot giant exoplanets}
+    \item Horizon 2020, Marie Sklodowska-Curie grant No 860470 (Chameleon)
+    \item Doppelpromotion an den Universitäten zu Löwen (BE) und Kopenhagen (DK)
+    \item Betreuer*innen: Dr. Ludmila Carone, Prof. Dr. Uffe Gråe Jørgensen, Prof. Dr. Leen Decin
+    \end{itemize}    
 	}
+	\\
 \end{entrylist}
-\section{Schooling}
+\section{Schulische Bildung}
 \begin{entrylist}
   \entry
     {09/06-06/14}
-    {Highschool}
+    {Gymnasium}
     {Evangelisches Gymnasium Siegen-Weidenau}
     {\begin{itemize}\vspace{-3mm}
-		\item advanced courses: physics, math
-		\item A-level: Grade 1.6 (UK: A)
+		\item Leistungskurse: Physik, Mathematik
+		\item Abitur: 1.6
 	\end{itemize}}
 \end{entrylist}
-\section{Experience}
+\section{Praktische Erfahrung}
 \begin{entrylist}
 	\entry
     {09/14-06/15}
-    {year abroad}
-    {Carnforth, England}
-    {theology studies}
+    {Auslandsaufenthalt}
+    {Carnforth}
+    {Theologische Studien}
 	\entry
-    {since 2016}
-    {private tutition}
+    {2013-2019}
+    {Nachhilfe}
+    {Siegen und Heidelberg}
+    {Gymnasiale Mathematik und Physik}
+    \entry
+    {2020}
+    {Tutor}
     {Heidelberg}
-    {highschool math and physics}
+    {Tutor für \enquote{Introduction to Astronomy \& Astrophysics II}}
+    \entry
+    {2023}
+    {Kunst Kollaboration}
+    {Kopenhagen}
+    {Simulationen für eine Skulptur, die ein Analemma darstellen soll. Zusammenarbeit mit dem renommierten dänischen Künstler Bj{\o}rn N{\o}rregard.}
 
 \end{entrylist}
-\section{Publications}
+\newpage
+\section{First-Author Refereed Publications}
 \begin{entrylist}
   \entry
     {09/18}
-    {A \& A, Volume 617, id.L7}
     {Schneider, A. D.; Dullemond, C. P.; Bitsch, B.}
+    {\href{https://arxiv.org/abs/1809.02834}{A \& A, Volume 617, id.L7}}
     {Surface waves in protoplanetary disks induced by outbursts: Concentric rings in scattered light}
+  \entry
+    {08/21}
+    {Schneider, A. D. and Bitsch, B.}
+    {\href{https://arxiv.org/abs/2105.13267}{A \& A, Volume 654, id.A71}}
+    {How drifting and evaporating pebbles shape giant planets I: Heavy element content and atmospheric C/O}
+  \entry
+    {10/21}
+    {Schneider, A. D. and Bitsch, B.}
+	{\href{https://arxiv.org/abs/2109.03589}{A \& A, Volume 654, id.A72}}
+    {How drifting and evaporating pebbles shape giant planets II: volatiles and refractories in atmospheres}
+  \entry
+    {02/22}
+    {Schneider, A. D.; Carone L.; Decin L.; Jørgensen, U.G.; Mollière, P.; Baeyens, R.; Kiefer, S.; Helling, C.}
+    {\href{https://arxiv.org/abs/2202.09183}{A \& A, Volume 664, id.A56}}
+    {Exploring the deep atmospheres of HD 209458b and WASP-43b using a non-gray general circulation model}    
+  \entry
+    {10/22}
+    {Schneider, A. D.; Carone L.; Decin L.; Jørgensen, U.G.; Helling, C.}
+    {\href{https://arxiv.org/abs/2210.01466}{A \& A, Volume 666, id.L11}}
+    {No evidence for radius inflation in hot Jupiters from vertical advection of heat}    
 \end{entrylist}
-\section{Volunteer Engagement}
+
+\section{Derzeit in review}
+\begin{entrylist}
+  \entry
+  	{10/23}
+    {Schneider, A. D.; Molli\`ere, P.; Louppe, G.; Carone, L.; J{\o}rgensen, U. G.; Decin, L.; Helling, C.}
+    {\href{https://arxiv.org/abs/2311.00775}{arXiv:2311.00775}}
+    {Harnessing machine learning for accurate treatment of overlapping opacity species in GCMs}  
+\end{entrylist}
+
+\section{Andere Refereed Publications}
+\begin{entrylist}
+  \entry
+    {05/21}
+    {Bitsch, B; Raymond, S. N.; Buchhave, L. A.; Bello-Arufe, A.; Rathcke, A. D.; Schneider, A. D.}
+    {\href{https://arxiv.org/abs/2104.11631}{A \& A, Volume 649, id.L5}}
+    {Dry or water world? How the water contents of inner sub-Neptunes constrain giant planet formation and the location of the water ice line}
+  \entry
+    {03/22}
+    {Mollière, P.; Molyarova, T.; Bitsch, B.; Henning, T.; Schneider, A.D.; Kreidberg, L.; Eistrup, C.; Burn, R.; Nasedkin, E.; Semenov, D.; Mordasini, C.; Schlecker, M.; Schwarz, K. R.; Lacour, S.; Nowak, M.; Schulik, M.}
+    {\href{https://arxiv.org/abs/2204.13714}{The Astrophysical Journal, Volume 934, Issue 1, id.74}}
+    {Interpreting the atmospheric composition of exoplanets: sensitivity to planet formation assumptions}
+  \entry
+  	{09/22}
+  	{Bitsch, B.; Schneider, A. D.; Kreidberg, L.}
+  	{\href{https://arxiv.org/abs/2207.06077}{A \& A, Volume 665, id.A138}}
+  	{How drifting and evaporating pebbles shape giant planets. III. The formation of WASP-77A b and \(\tau \) Boötis b}
+  \entry
+  	{01/23}
+  	{{Samra}, D.; {Helling}, C.; {Chubb}, K. L.; {Min}, M.; {Carone}, L.; {Schneider}, A. D.}
+  	{\href{https://arxiv.org/abs/2211.00633}{A \& A, Volume 669, id.A142}}
+  	{Clouds form on the hot Saturn JWST ERO target WASP-96b}
+  \entry
+  	{06/23}
+  	{{Sainsbury-Martinez}, F.; {Tremblin}, P.; {Schneider}, A. D.; {Carone}, L.; {Baraffe}, I.; {Chabrier}, G.; {Helling}, C.; {Decin}, L.; {J{\o}rgensen}, U. G.}
+  	{\href{https://arxiv.org/abs/2306.12352}{MNRAS, Volume 524, 1316–1325}}
+  	{Evidence of Radius Inflation in Radiative GCM Models of WASP-76b due to the Advection of Potential Temperature}
+\end{entrylist}
+
+\section{Ehrenamt}
 \begin{entrylist}
   \entry
     {2015-2019}
-    {voluntary work at a christian university group}
+    {Mitarbeit in einer christlichen Hochschulgruppe}
     {Heidelberg}
     {Hochschul SMD Heidelberg}
+  \entry
+    {2022-}
+    {Tontechnik}
+    {Kopenhagen}
+    {Lokale Kirche}    
 \end{entrylist}
-\vspace{1.3cm}
-\begin{flushright}
-\includegraphics[width=.2\textwidth]{img/signature}\\
-\emph{Aaron David Schneider, November 18th, 2019}
-\end{flushright}
-\clearpage
+
+% Note: If space, add this:
+%\vspace{1.3cm}
+%\begin{flushright}
+%\includegraphics[width=.2\textwidth]{img/signature}\\
+%\emph{Aaron David Schneider, \today}
+%\end{flushright}
+%\clearpage
 
 %\section{Publications}
 %Author, Author, Author\\
